@@ -1,0 +1,15 @@
+D:\Arquivos\Projetos\Bebela-Modas\Bebela.Modas\bin\Debug\netcoreapp3.1\Bebela.Modas.exe
+D:\Arquivos\Projetos\Bebela-Modas\Bebela.Modas\bin\Debug\netcoreapp3.1\Bebela.Modas.deps.json
+D:\Arquivos\Projetos\Bebela-Modas\Bebela.Modas\bin\Debug\netcoreapp3.1\Bebela.Modas.runtimeconfig.json
+D:\Arquivos\Projetos\Bebela-Modas\Bebela.Modas\bin\Debug\netcoreapp3.1\Bebela.Modas.runtimeconfig.dev.json
+D:\Arquivos\Projetos\Bebela-Modas\Bebela.Modas\bin\Debug\netcoreapp3.1\Bebela.Modas.dll
+D:\Arquivos\Projetos\Bebela-Modas\Bebela.Modas\bin\Debug\netcoreapp3.1\Bebela.Modas.pdb
+D:\Arquivos\Projetos\Bebela-Modas\Bebela.Modas\obj\Debug\netcoreapp3.1\Bebela.Modas.csprojAssemblyReference.cache
+D:\Arquivos\Projetos\Bebela-Modas\Bebela.Modas\obj\Debug\netcoreapp3.1\Bebela.Modas.Form1.resources
+D:\Arquivos\Projetos\Bebela-Modas\Bebela.Modas\obj\Debug\netcoreapp3.1\Bebela.Modas.csproj.GenerateResource.cache
+D:\Arquivos\Projetos\Bebela-Modas\Bebela.Modas\obj\Debug\netcoreapp3.1\Bebela.Modas.AssemblyInfoInputs.cache
+D:\Arquivos\Projetos\Bebela-Modas\Bebela.Modas\obj\Debug\netcoreapp3.1\Bebela.Modas.AssemblyInfo.cs
+D:\Arquivos\Projetos\Bebela-Modas\Bebela.Modas\obj\Debug\netcoreapp3.1\Bebela.Modas.csproj.CoreCompileInputs.cache
+D:\Arquivos\Projetos\Bebela-Modas\Bebela.Modas\obj\Debug\netcoreapp3.1\Bebela.Modas.dll
+D:\Arquivos\Projetos\Bebela-Modas\Bebela.Modas\obj\Debug\netcoreapp3.1\Bebela.Modas.pdb
+D:\Arquivos\Projetos\Bebela-Modas\Bebela.Modas\obj\Debug\netcoreapp3.1\Bebela.Modas.genruntimeconfig.cache

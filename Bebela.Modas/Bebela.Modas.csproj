@@ -6,4 +6,18 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Formularios\BM.CDC.FORMULARIO.cs" />
+    <Compile Remove="PLA\BM.CDC.PLA.CADASTRO.cs" />
+    <Compile Remove="SCF\BM.CDC.SCF.CADASTRO.cs" />
+    <Compile Remove="SRF\BM.CDC.SRF.CADASTRO.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Formularios\BM.CDC.FORMULARIO.cs" />
+    <None Include="PLA\BM.CDC.PLA.CADASTRO.cs" />
+    <None Include="SCF\BM.CDC.SCF.CADASTRO.cs" />
+    <None Include="SRF\BM.CDC.SRF.CADASTRO.cs" />
+  </ItemGroup>
+
 </Project>
