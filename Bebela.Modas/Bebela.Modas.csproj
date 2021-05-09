@@ -7,17 +7,24 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Formularios\BM.CDC.FORMULARIO.cs" />
-    <Compile Remove="PLA\BM.CDC.PLA.CADASTRO.cs" />
-    <Compile Remove="SCF\BM.CDC.SCF.CADASTRO.cs" />
-    <Compile Remove="SRF\BM.CDC.SRF.CADASTRO.cs" />
+    <Compile Remove="Formularios\**" />
+    <Compile Remove="PLA\**" />
+    <Compile Remove="SCF\**" />
+    <Compile Remove="SRF\**" />
+    <EmbeddedResource Remove="Formularios\**" />
+    <EmbeddedResource Remove="PLA\**" />
+    <EmbeddedResource Remove="SCF\**" />
+    <EmbeddedResource Remove="SRF\**" />
+    <None Remove="Formularios\**" />
+    <None Remove="PLA\**" />
+    <None Remove="SCF\**" />
+    <None Remove="SRF\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Formularios\BM.CDC.FORMULARIO.cs" />
-    <None Include="PLA\BM.CDC.PLA.CADASTRO.cs" />
-    <None Include="SCF\BM.CDC.SCF.CADASTRO.cs" />
-    <None Include="SRF\BM.CDC.SRF.CADASTRO.cs" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="2.1.2" />
+    <PackageReference Include="NETStandard.Library" Version="2.0.3" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>
 
 </Project>

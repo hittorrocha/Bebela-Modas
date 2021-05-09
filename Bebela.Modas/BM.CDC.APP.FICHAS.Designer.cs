@@ -34,6 +34,8 @@ namespace Bebela.Modas
             this.btnBuscar = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnCadastrar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,14 +45,22 @@ namespace Bebela.Modas
             this.dudQuantidade = new System.Windows.Forms.DomainUpDown();
             this.cbxProduto = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnCadastrar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
+            this.dgvCompras = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.Arquivo = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.Cadastrar = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastrarCompra = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastrarCliente = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastrarProduto = new System.Windows.Forms.ToolStripMenuItem();
+            this.imprimirFicha = new System.Windows.Forms.ToolStripMenuItem();
+            this.sair = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCompras)).BeginInit();
             this.groupBox3.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -79,6 +89,7 @@ namespace Bebela.Modas
             this.btnBuscar.TabIndex = 2;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // lblTitulo
             // 
@@ -103,17 +114,36 @@ namespace Bebela.Modas
             this.groupBox1.Controls.Add(this.dudQuantidade);
             this.groupBox1.Controls.Add(this.cbxProduto);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.Location = new System.Drawing.Point(12, 154);
+            this.groupBox1.Location = new System.Drawing.Point(12, 204);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(843, 136);
+            this.groupBox1.Size = new System.Drawing.Size(843, 98);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cadastrar Compra";
             // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(657, 51);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(137, 23);
+            this.btnCancelar.TabIndex = 9;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // btnCadastrar
+            // 
+            this.btnCadastrar.Location = new System.Drawing.Point(657, 22);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(137, 23);
+            this.btnCadastrar.TabIndex = 8;
+            this.btnCadastrar.Text = "Cadastrar Compra";
+            this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(486, 29);
+            this.label5.Location = new System.Drawing.Point(486, 32);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 15);
             this.label5.TabIndex = 7;
@@ -122,7 +152,7 @@ namespace Bebela.Modas
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(358, 29);
+            this.label4.Location = new System.Drawing.Point(358, 32);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(56, 15);
             this.label4.TabIndex = 6;
@@ -131,7 +161,7 @@ namespace Bebela.Modas
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(252, 29);
+            this.label3.Location = new System.Drawing.Point(252, 32);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 15);
             this.label3.TabIndex = 5;
@@ -140,7 +170,7 @@ namespace Bebela.Modas
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 29);
+            this.label2.Location = new System.Drawing.Point(6, 32);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 15);
             this.label2.TabIndex = 4;
@@ -149,14 +179,14 @@ namespace Bebela.Modas
             // cbxSituação
             // 
             this.cbxSituação.FormattingEnabled = true;
-            this.cbxSituação.Location = new System.Drawing.Point(486, 46);
+            this.cbxSituação.Location = new System.Drawing.Point(486, 51);
             this.cbxSituação.Name = "cbxSituação";
             this.cbxSituação.Size = new System.Drawing.Size(156, 23);
             this.cbxSituação.TabIndex = 3;
             // 
             // txtValor
             // 
-            this.txtValor.Location = new System.Drawing.Point(358, 46);
+            this.txtValor.Location = new System.Drawing.Point(358, 51);
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(100, 23);
             this.txtValor.TabIndex = 2;
@@ -173,7 +203,7 @@ namespace Bebela.Modas
             this.dudQuantidade.Items.Add("8");
             this.dudQuantidade.Items.Add("9");
             this.dudQuantidade.Items.Add("10");
-            this.dudQuantidade.Location = new System.Drawing.Point(254, 47);
+            this.dudQuantidade.Location = new System.Drawing.Point(252, 51);
             this.dudQuantidade.Name = "dudQuantidade";
             this.dudQuantidade.Size = new System.Drawing.Size(72, 23);
             this.dudQuantidade.TabIndex = 1;
@@ -182,48 +212,30 @@ namespace Bebela.Modas
             // cbxProduto
             // 
             this.cbxProduto.FormattingEnabled = true;
-            this.cbxProduto.Location = new System.Drawing.Point(6, 47);
+            this.cbxProduto.Location = new System.Drawing.Point(6, 50);
             this.cbxProduto.Name = "cbxProduto";
             this.cbxProduto.Size = new System.Drawing.Size(229, 23);
             this.cbxProduto.TabIndex = 0;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.dataGridView1);
+            this.groupBox2.Controls.Add(this.dgvCompras);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox2.Location = new System.Drawing.Point(12, 296);
+            this.groupBox2.Location = new System.Drawing.Point(12, 308);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(843, 198);
+            this.groupBox2.Size = new System.Drawing.Size(843, 257);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ficha";
             // 
-            // dataGridView1
+            // dgvCompras
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 22);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(831, 170);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // btnCadastrar
-            // 
-            this.btnCadastrar.Location = new System.Drawing.Point(663, 45);
-            this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(137, 23);
-            this.btnCadastrar.TabIndex = 8;
-            this.btnCadastrar.Text = "Cadastrar Compra";
-            this.btnCadastrar.UseVisualStyleBackColor = true;
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Location = new System.Drawing.Point(663, 100);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(137, 23);
-            this.btnCancelar.TabIndex = 9;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.dgvCompras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCompras.Location = new System.Drawing.Point(6, 28);
+            this.dgvCompras.Name = "dgvCompras";
+            this.dgvCompras.RowTemplate.Height = 25;
+            this.dgvCompras.Size = new System.Drawing.Size(831, 235);
+            this.dgvCompras.TabIndex = 0;
             // 
             // groupBox3
             // 
@@ -231,31 +243,103 @@ namespace Bebela.Modas
             this.groupBox3.Controls.Add(this.cbxCliente);
             this.groupBox3.Controls.Add(this.btnBuscar);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox3.Location = new System.Drawing.Point(12, 58);
+            this.groupBox3.Location = new System.Drawing.Point(12, 106);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(843, 81);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Pesquisar Cliente";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Arquivo,
+            this.Cadastrar,
+            this.imprimirFicha,
+            this.sair});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(873, 24);
+            this.menuStrip1.TabIndex = 10;
+            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked_1);
+            // 
+            // Arquivo
+            // 
+            this.Arquivo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem2});
+            this.Arquivo.Name = "Arquivo";
+            this.Arquivo.Size = new System.Drawing.Size(125, 20);
+            this.Arquivo.Text = "toolStripMenuItem1";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(32, 19);
+            this.toolStripMenuItem2.Text = "toolStripMenuItem2";
+            // 
+            // Cadastrar
+            // 
+            this.Cadastrar.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastrarCompra,
+            this.cadastrarCliente,
+            this.cadastrarProduto});
+            this.Cadastrar.Name = "Cadastrar";
+            this.Cadastrar.Size = new System.Drawing.Size(125, 20);
+            this.Cadastrar.Text = "toolStripMenuItem1";
+            // 
+            // cadastrarCompra
+            // 
+            this.cadastrarCompra.Name = "cadastrarCompra";
+            this.cadastrarCompra.Size = new System.Drawing.Size(170, 22);
+            this.cadastrarCompra.Text = "Cadastrar Compra";
+            // 
+            // cadastrarCliente
+            // 
+            this.cadastrarCliente.Name = "cadastrarCliente";
+            this.cadastrarCliente.Size = new System.Drawing.Size(170, 22);
+            this.cadastrarCliente.Text = "Cadastrar Cliente";
+            // 
+            // cadastrarProduto
+            // 
+            this.cadastrarProduto.Name = "cadastrarProduto";
+            this.cadastrarProduto.Size = new System.Drawing.Size(170, 22);
+            this.cadastrarProduto.Text = "Cadastrar Produto";
+            // 
+            // imprimirFicha
+            // 
+            this.imprimirFicha.Name = "imprimirFicha";
+            this.imprimirFicha.Size = new System.Drawing.Size(96, 20);
+            this.imprimirFicha.Text = "Imprimir Ficha";
+            // 
+            // sair
+            // 
+            this.sair.Name = "sair";
+            this.sair.Size = new System.Drawing.Size(38, 20);
+            this.sair.Text = "Sair";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(873, 497);
+            this.ClientSize = new System.Drawing.Size(873, 577);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblTitulo);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCompras)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -277,10 +361,19 @@ namespace Bebela.Modas
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbxSituação;
         private System.Windows.Forms.TextBox txtValor;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvCompras;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem Arquivo;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem Cadastrar;
+        private System.Windows.Forms.ToolStripMenuItem cadastrarCompra;
+        private System.Windows.Forms.ToolStripMenuItem cadastrarCliente;
+        private System.Windows.Forms.ToolStripMenuItem cadastrarProduto;
+        private System.Windows.Forms.ToolStripMenuItem imprimirFicha;
+        private System.Windows.Forms.ToolStripMenuItem sair;
     }
 }
 
