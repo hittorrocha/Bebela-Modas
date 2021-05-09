@@ -48,19 +48,10 @@ namespace Bebela.Modas
             this.dgvCompras = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.Arquivo = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.Cadastrar = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastrarCompra = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastrarCliente = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastrarProduto = new System.Windows.Forms.ToolStripMenuItem();
-            this.imprimirFicha = new System.Windows.Forms.ToolStripMenuItem();
-            this.sair = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCompras)).BeginInit();
             this.groupBox3.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -95,7 +86,7 @@ namespace Bebela.Modas
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Stencil", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTitulo.Location = new System.Drawing.Point(328, 26);
+            this.lblTitulo.Location = new System.Drawing.Point(325, 74);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(197, 29);
             this.lblTitulo.TabIndex = 6;
@@ -252,71 +243,11 @@ namespace Bebela.Modas
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.Arquivo,
-            this.Cadastrar,
-            this.imprimirFicha,
-            this.sair});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(873, 24);
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked_1);
-            // 
-            // Arquivo
-            // 
-            this.Arquivo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2});
-            this.Arquivo.Name = "Arquivo";
-            this.Arquivo.Size = new System.Drawing.Size(125, 20);
-            this.Arquivo.Text = "toolStripMenuItem1";
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(32, 19);
-            this.toolStripMenuItem2.Text = "toolStripMenuItem2";
-            // 
-            // Cadastrar
-            // 
-            this.Cadastrar.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastrarCompra,
-            this.cadastrarCliente,
-            this.cadastrarProduto});
-            this.Cadastrar.Name = "Cadastrar";
-            this.Cadastrar.Size = new System.Drawing.Size(125, 20);
-            this.Cadastrar.Text = "toolStripMenuItem1";
-            // 
-            // cadastrarCompra
-            // 
-            this.cadastrarCompra.Name = "cadastrarCompra";
-            this.cadastrarCompra.Size = new System.Drawing.Size(170, 22);
-            this.cadastrarCompra.Text = "Cadastrar Compra";
-            // 
-            // cadastrarCliente
-            // 
-            this.cadastrarCliente.Name = "cadastrarCliente";
-            this.cadastrarCliente.Size = new System.Drawing.Size(170, 22);
-            this.cadastrarCliente.Text = "Cadastrar Cliente";
-            // 
-            // cadastrarProduto
-            // 
-            this.cadastrarProduto.Name = "cadastrarProduto";
-            this.cadastrarProduto.Size = new System.Drawing.Size(170, 22);
-            this.cadastrarProduto.Text = "Cadastrar Produto";
-            // 
-            // imprimirFicha
-            // 
-            this.imprimirFicha.Name = "imprimirFicha";
-            this.imprimirFicha.Size = new System.Drawing.Size(96, 20);
-            this.imprimirFicha.Text = "Imprimir Ficha";
-            // 
-            // sair
-            // 
-            this.sair.Name = "sair";
-            this.sair.Size = new System.Drawing.Size(38, 20);
-            this.sair.Text = "Sair";
             // 
             // Form1
             // 
@@ -338,8 +269,6 @@ namespace Bebela.Modas
             ((System.ComponentModel.ISupportInitialize)(this.dgvCompras)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -366,14 +295,6 @@ namespace Bebela.Modas
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem Arquivo;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem Cadastrar;
-        private System.Windows.Forms.ToolStripMenuItem cadastrarCompra;
-        private System.Windows.Forms.ToolStripMenuItem cadastrarCliente;
-        private System.Windows.Forms.ToolStripMenuItem cadastrarProduto;
-        private System.Windows.Forms.ToolStripMenuItem imprimirFicha;
-        private System.Windows.Forms.ToolStripMenuItem sair;
     }
 }
 

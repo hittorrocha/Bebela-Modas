@@ -164,5 +164,10 @@ namespace Bebela.Modas
         {
 
         }
+
+        private void menuStrip1_ItemClicked_2(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }
